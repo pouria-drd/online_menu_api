@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",  # JSON Web Token authentication
     "django_cleanup.apps.CleanupSelectedConfig",  # Clean up unused media files
     # Custom apps
-    # "users",
+    "users",
 ]
 
 # Middleware configuration
@@ -111,8 +111,8 @@ DATABASES = {
 # ---------------------------------------------------------------
 
 AUTHENTICATION_BACKENDS = [
-    # "users.backends.AuthBackend",  # Custom authentication backend
-    "django.contrib.auth.backends.ModelBackend",  # Default Django authentication
+    "users.backends.AuthBackend",  # Custom authentication backend
+    # "django.contrib.auth.backends.ModelBackend",  # Default Django authentication
 ]
 
 
