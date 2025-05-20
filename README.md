@@ -7,9 +7,6 @@
 -   [Features](#features)
 -   [Prerequisites](#prerequisites)
 -   [Installation](#installation)
--   [Setup](#setup)
--   [Environment Configuration](#environment-configuration)
--   [Usage](#usage)
 -   [License](#license)
 
 ## Features
