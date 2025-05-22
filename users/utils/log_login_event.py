@@ -1,19 +1,19 @@
 from logging import getLogger
 from ipware import get_client_ip
 from django.utils.timezone import now
+from rest_framework.request import Request
 
 logger = getLogger("login_v1")
 
 
-def log_login_event(success, request, username):
+def log_login_event(success: bool, request: Request, username: str):
     """
     Log a login event with the given success status, request, username, and user ID.
 
     Args:
         success (bool): Whether the login was successful
-        request (HttpRequest): The request object
+        request (Request): The request object
         username (str): The username or email used for login
-        user_id (str): The user UUID
     """
     ip, _ = get_client_ip(request)
     ip = ip or "Unknown"

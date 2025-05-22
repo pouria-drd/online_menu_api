@@ -40,7 +40,7 @@ class AuthBackend(BaseBackend):
             ip, _ = get_client_ip(request)
             ip = ip or "Unknown"
 
-            log_login_event(True, request, username, user.id)
+            log_login_event(True, request, username)
             return user
 
         ip, _ = get_client_ip(request)
