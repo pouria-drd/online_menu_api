@@ -20,9 +20,9 @@ def normalize_phone(phone: str) -> str:
     # If local Iranian phone (0XXXXXXXXX), convert to +98XXXXXXXXX
     if re.match(r"^0\d{10}$", phone):
         phone = "+98" + phone[1:]
-    else:
-        # If it doesn't start with '+' after normalization, warn
-        if not phone.startswith("+"):
-            print(" [WARNING] Invalid phone format:", phone)
+    # else:
+    #     # If it doesn't start with '+' after normalization, warn
+    #     if not phone.startswith("+"):
+    #         print(" [WARNING] Invalid phone format:", phone)
 
     return phone
