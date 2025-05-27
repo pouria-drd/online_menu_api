@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",  # JSON Web Token authentication
     "django_cleanup.apps.CleanupSelectedConfig",  # Clean up unused media files
     # Custom apps
+    "authentication",
     "users",
 ]
 
