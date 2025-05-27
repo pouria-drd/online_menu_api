@@ -112,7 +112,7 @@ DATABASES = {
 # ---------------------------------------------------------------
 
 AUTHENTICATION_BACKENDS = [
-    "users.backends.AuthBackend",  # Custom authentication backend
+    "authentication.backends.AuthBackend",  # Custom authentication backend
     # "django.contrib.auth.backends.ModelBackend",  # Default Django authentication
 ]
 
