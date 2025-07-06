@@ -1,12 +1,14 @@
 from logging import getLogger
 from ipware import get_client_ip
+from django.http import HttpRequest
 from django.utils.timezone import now
-from rest_framework.request import Request
 
 logger = getLogger("login_v1")
 
 
-def log_login_event(success: bool, request: Request, username: str, reason: str = None):
+def log_login_event(
+    success: bool, request: HttpRequest, username: str, reason: str = ""
+):
     """
     Log a login event with the given success status, request, username, and optional reason.
 
